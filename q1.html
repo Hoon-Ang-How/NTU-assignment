@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question1</title>
+      
+  </head>
+  
+  <body>
+    <p class="js-swapping"></p>
+    
+    <script>
+     
+    function swap(x, y){
+     
+      if (typeof x != 'number' || typeof y != 'number' ){
+        return "-1";     
+      
+      } else {
+         [x, y] = [y, x];
+
+         return `x = ${x} y = ${y}`;        
+      }   
+    }  
+
+    document.querySelector(".js-swapping").innerHTML = swap(2,9);  
+ 
+    </script>
+  </body>
+</html>
+
+
+
+
+

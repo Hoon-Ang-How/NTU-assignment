@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question2</title>
+      
+  </head>
+
+  <body>
+    <p class="js-staffList"></p>
+    
+    <script>
+     
+    const myArray = [];
+     
+      function addPatient(patientName){
+        myArray.push(patientName);
+      }
+
+       addPatient("John");
+       addPatient("Mary");
+       addPatient("Mark");
+
+       function listPatient(){
+       document.querySelector('.js-staffList').innerHTML = myArray;
+       }
+
+      listPatient(); 
+      
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
